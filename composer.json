@@ -6,15 +6,17 @@
     "url": "http://packagist.drupal-composer.org"
   }],
   "require": {
-    "composer/installers": "~1.0",
-    "derhasi/composer-preserve-paths": "0.1.*",
     "drupal/drupal": "7.*",
     "drupal/ctools": "7.*",
-    "drush/drush": "6.*",
-    "drupal/media": "~7.1",
-    "drupal/wysiwyg": "~7.2",
-    "drupal/simplify": "~7.3",
-    "drupal/require_login": "~7.1"
+    "drupal/media": "7.*",
+    "drupal/wysiwyg": "7.*",
+    "drupal/simplify": "7.*",
+    "drupal/require_login": "7.*"
+  },
+  "require-dev": {
+    "composer/installers": "~1.0",
+    "derhasi/composer-preserve-paths": "0.1.*",
+    "drush/drush": "6.*"
   },
   "scripts": {
     "post-create-project-cmd": [
