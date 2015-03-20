@@ -1,0 +1,13 @@
+diff --git a/editors/ckeditor.inc b/editors/ckeditor.inc
+index 3f7d16d..910fd5a 100644
+--- a/editors/ckeditor.inc
++++ b/editors/ckeditor.inc
+@@ -81,7 +81,7 @@ function wysiwyg_ckeditor_version($editor) {
+     // version:'3.0 RC',revision:'3753'
+     // version:'3.0.1',revision:'4391'
+     // version:"4.0",revision:"769d96134b"
+-    if (preg_match('@version:[\'"](?:CKEditor )?([\d\.]+)(?:.+revision:[\'"]([[:xdigit:]]+))?@', $line, $version)) {
++    if (preg_match('@version:[\'"](?:CKEditor )?([\d\.]+)(?:.+revision:[\'"]([\w]+))?@', $line, $version)) {
+       fclose($library);
+       // Version numbers need to have three parts since 3.0.1.
+       $version[1] = preg_replace('/^(\d+)\.(\d+)$/', '${1}.${2}.0', $version[1]);
