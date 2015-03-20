@@ -11,7 +11,11 @@
     "drupal/media": "7.*",
     "drupal/wysiwyg": "7.*",
     "drupal/simplify": "7.*",
-    "drupal/require_login": "7.*"
+    "drupal/require_login": "7.*",
+    "drupal/date": "7.*",
+    "drupal/views": "7.*",
+    "drupal/calendar": "7.*",
+    "drupal/event_calendar": "7.*"
   },
   "require-dev": {
     "composer/installers": "~1.0",
